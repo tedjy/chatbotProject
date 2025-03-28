@@ -1,0 +1,13 @@
+ [
+    {
+        "question": "Qu’est-ce qui t’intéresse le plus ?",
+        "options": ["Sciences", "Art", "Informatique", "Commerce", "Nature"],
+        "key": "interet"
+    },
+    {
+        "question": "Dans quoi es-tu le plus à l’aise ?",
+        "options": ["Communiquer", "Résoudre des problèmes", "Créer", "Organiser"],
+        "key": "competence"
+    }
+
+]

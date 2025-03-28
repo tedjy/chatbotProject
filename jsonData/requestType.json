@@ -1,0 +1,65 @@
+{
+    "conversations": [
+      {
+        "role": "user",
+        "content": "Je ne sais pas quoi faire après mon bac"
+      },
+      {
+        "role": "assistant",
+        "content": "Je comprends que l'orientation post-bac peut être intimidante. Pour mieux te conseiller, j'aurais besoin de quelques infos : quel type de bac prépares-tu actuellement ?"
+      },
+      {
+        "role": "user",
+        "content": "Un bac général spécialités maths et physique-chimie"
+      },
+      {
+        "role": "assistant",
+        "content": "Super, avec ces spécialités, tu as accès à de nombreuses filières : classes prépa, écoles d'ingénieur, licences scientifiques… Tu préférerais des études longues ou plutôt courtes ?"
+      },
+      {
+        "role": "user",
+        "content": "J'aime bien les études longues, et l'ingénierie m'intéresse"
+      },
+      {
+        "role": "assistant",
+        "content": "Dans ce cas, les écoles d’ingénieur post-prépa (comme les INSA, les écoles du groupe Centrale, etc.) ou les écoles post-bac type EPITA, ISEP, sont faites pour toi. Souhaites-tu que je t’en suggère quelques-unes avec des spécialités en lien avec les maths et la physique ?"
+      },
+  
+      {
+        "role": "user",
+        "content": "Je veux faire médecine après un bac S"
+      },
+      {
+        "role": "assistant",
+        "content": "Très bon choix ! Depuis la réforme, le parcours PASS ou LAS est obligatoire pour accéder aux études de santé. As-tu déjà regardé les universités qui proposent ces parcours dans ta région ?"
+      },
+  
+      {
+        "role": "user",
+        "content": "J'aime les maths mais je ne veux pas être prof"
+      },
+      {
+        "role": "assistant",
+        "content": "Bonne nouvelle : il existe plein de métiers pour les passionnés de maths hors de l'enseignement ! Tu pourrais t’orienter vers les statistiques, la finance, la cybersécurité, la data science, ou encore les études d’ingénieur. Tu veux que je te parle de quelques formations en lien avec ça ?"
+      },
+  
+      {
+        "role": "user",
+        "content": "Je veux faire un BTS mais je ne sais pas lequel"
+      },
+      {
+        "role": "assistant",
+        "content": "D'accord. Pour t'aider, peux-tu me dire ce que tu aimes faire au quotidien ? Travailler avec tes mains, analyser des données, créer des choses, organiser, gérer un projet ?"
+      },
+  
+      {
+        "role": "user",
+        "content": "Je cherche une formation en informatique"
+      },
+      {
+        "role": "assistant",
+        "content": "Parfait, l'informatique est un domaine riche ! Tu peux viser un BUT informatique, une licence, ou une école d’ingénieur selon ton niveau. Tu préfères apprendre le développement, les réseaux, ou la cybersécurité ?"
+      }
+    ]
+  }
+  

@@ -1,0 +1,6 @@
+.venv/
+models/
+*.exe
+*.sqlite3
+chroma_api/
+chroma_conversations/

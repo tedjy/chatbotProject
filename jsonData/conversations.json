@@ -1,0 +1,426 @@
+{
+    "conversations": [
+      [
+        {
+          "role": "user",
+          "content": "Je veux devenir ingénieur en informatique"
+        },
+        {
+          "role": "assistant",
+          "content": "Les écoles d’ingénieurs sont accessibles après prépa ou post-bac. Tu veux que je t’en propose quelques-unes dans ton domaine ?"
+        },
+        {
+          "role": "user",
+          "content": "J'aime bien la tech et les systèmes informatiques."
+        },
+        {
+          "role": "assistant",
+          "content": "Je te recommande : **École d’ingénieur** à *EPITA Paris*. Spécialisée en cybersécurité, IA, systèmes embarqués."
+        }
+      ],
+      [
+        {
+          "role": "user",
+          "content": "Je ne sais pas quoi faire après mon bac"
+        },
+        {
+          "role": "assistant",
+          "content": "Je comprends que l'orientation post-bac peut être intimidante. Pour mieux te conseiller, j'aurais besoin de quelques infos : quel type de bac prépares-tu actuellement ?"
+        },
+        {
+          "role": "user",
+          "content": "Un bac général spécialités maths et physique-chimie"
+        },
+        {
+          "role": "assistant",
+          "content": "Super, avec ces spécialités, tu as accès à de nombreuses filières : classes prépa, écoles d'ingénieur, licences scientifiques… Tu préférerais des études longues ou plutôt courtes ?"
+        },
+        {
+          "role": "user",
+          "content": "J'aime bien les études longues, et l'ingénierie m'intéresse"
+        },
+        {
+          "role": "assistant",
+          "content": "Dans ce cas, les écoles d’ingénieur post-prépa (comme les INSA, les écoles du groupe Centrale, etc.) ou les écoles post-bac type EPITA, ISEP, sont faites pour toi. Souhaites-tu que je t’en suggère quelques-unes avec des spécialités en lien avec les maths et la physique ?"
+        },
+    
+        {
+          "role": "user",
+          "content": "Je veux faire médecine après un bac S"
+        },
+        {
+          "role": "assistant",
+          "content": "Très bon choix ! Depuis la réforme, le parcours PASS ou LAS est obligatoire pour accéder aux études de santé. As-tu déjà regardé les universités qui proposent ces parcours dans ta région ?"
+        },
+    
+        {
+          "role": "user",
+          "content": "J'aime les maths mais je ne veux pas être prof"
+        },
+        {
+          "role": "assistant",
+          "content": "Bonne nouvelle : il existe plein de métiers pour les passionnés de maths hors de l'enseignement ! Tu pourrais t’orienter vers les statistiques, la finance, la cybersécurité, la data science, ou encore les études d’ingénieur. Tu veux que je te parle de quelques formations en lien avec ça ?"
+        },
+    
+        {
+          "role": "user",
+          "content": "Je veux faire un BTS mais je ne sais pas lequel"
+        },
+        {
+          "role": "assistant",
+          "content": "D'accord. Pour t'aider, peux-tu me dire ce que tu aimes faire au quotidien ? Travailler avec tes mains, analyser des données, créer des choses, organiser, gérer un projet ?"
+        },
+    
+        {
+          "role": "user",
+          "content": "Je cherche une formation en informatique"
+        },
+        {
+          "role": "assistant",
+          "content": "Parfait, l'informatique est un domaine riche ! Tu peux viser un BUT informatique, une licence, ou une école d’ingénieur selon ton niveau. Tu préfères apprendre le développement, les réseaux, ou la cybersécurité ?"
+        }
+      ],
+      [
+        {
+          "role": "user",
+          "content": "Je suis perdu entre une prépa et un BUT"
+        },
+        {
+          "role": "assistant",
+          "content": "D'accord. Pour mieux t'aider, peux-tu me dire ton type de bac, ce que tu aimes faire, ou si tu veux des études longues ou courtes ?"
+        },
+        {
+          "role": "user",
+          "content": "J'aime bien la tech et les systèmes informatiques."
+        },
+        {
+          "role": "assistant",
+          "content": "Je te recommande : **Licence Informatique** à *Université de Lille*. Bases théoriques de l'informatique, algorithmique, programmation."
+        }
+      ],
+      [
+        {
+          "role": "user",
+          "content": "J'aime bien le social mais je suis aussi à l'aise avec les chiffres"
+        },
+        {
+          "role": "assistant",
+          "content": "D'accord. Pour mieux t'aider, peux-tu me dire ton type de bac, ce que tu aimes faire, ou si tu veux des études longues ou courtes ?"
+        },
+        {
+          "role": "user",
+          "content": "J'aime bien la tech et les systèmes informatiques."
+        },
+        {
+          "role": "assistant",
+          "content": "Je te recommande : **BUT Informatique** à *IUT Nice Côte d’Azur*. Formation pratique en développement, réseaux, bases de données."
+        }
+      ],
+      [
+        {
+          "role": "user",
+          "content": "J'aimerais un métier créatif dans le numérique"
+        },
+        {
+          "role": "assistant",
+          "content": "D'accord. Pour mieux t'aider, peux-tu me dire ton type de bac, ce que tu aimes faire, ou si tu veux des études longues ou courtes ?"
+        },
+        {
+          "role": "user",
+          "content": "J'aime bien la tech et les systèmes informatiques."
+        },
+        {
+          "role": "assistant",
+          "content": "Je te recommande : **École d’ingénieur** à *EPITA Paris*. Spécialisée en cybersécurité, IA, systèmes embarqués."
+        }
+      ],
+      [
+        {
+          "role": "user",
+          "content": "Je cherche une voie rapide vers l'emploi"
+        },
+        {
+          "role": "assistant",
+          "content": "Certains BTS ou formations en alternance te permettent de travailler rapidement tout en étant rémunéré."
+        },
+        {
+          "role": "user",
+          "content": "J'aime bien la tech et les systèmes informatiques."
+        },
+        {
+          "role": "assistant",
+          "content": "Je te recommande : **Licence Informatique** à *Université de Lille*. Bases théoriques de l'informatique, algorithmique, programmation."
+        }
+      ],
+      [
+        {
+          "role": "user",
+          "content": "Je veux bosser dans la cybersécurité"
+        },
+        {
+          "role": "assistant",
+          "content": "La cybersécurité est un domaine en pleine expansion. Tu peux viser un BUT Informatique, une licence pro sécurité ou une école d’ingénieur spécialisée."
+        },
+        {
+          "role": "user",
+          "content": "J'aime bien la tech et les systèmes informatiques."
+        },
+        {
+          "role": "assistant",
+          "content": "Je te recommande : **Licence Informatique** à *Université de Lille*. Bases théoriques de l'informatique, algorithmique, programmation."
+        }
+      ],
+      [
+        {
+          "role": "user",
+          "content": "Je ne veux pas faire de longues études mais je veux un bon salaire"
+        },
+        {
+          "role": "assistant",
+          "content": "D'accord. Pour mieux t'aider, peux-tu me dire ton type de bac, ce que tu aimes faire, ou si tu veux des études longues ou courtes ?"
+        },
+        {
+          "role": "user",
+          "content": "J'aime bien la tech et les systèmes informatiques."
+        },
+        {
+          "role": "assistant",
+          "content": "Je te recommande : **Licence Informatique** à *Université de Lille*. Bases théoriques de l'informatique, algorithmique, programmation."
+        }
+      ],
+      [
+        {
+          "role": "user",
+          "content": "J'hésite entre médecine et paramédical"
+        },
+        {
+          "role": "assistant",
+          "content": "D'accord. Pour mieux t'aider, peux-tu me dire ton type de bac, ce que tu aimes faire, ou si tu veux des études longues ou courtes ?"
+        },
+        {
+          "role": "user",
+          "content": "J'aime bien la tech et les systèmes informatiques."
+        },
+        {
+          "role": "assistant",
+          "content": "Je te recommande : **École d’ingénieur** à *EPITA Paris*. Spécialisée en cybersécurité, IA, systèmes embarqués."
+        }
+      ],
+      [
+        {
+          "role": "user",
+          "content": "J'aimerais faire un métier utile à la société"
+        },
+        {
+          "role": "assistant",
+          "content": "D'accord. Pour mieux t'aider, peux-tu me dire ton type de bac, ce que tu aimes faire, ou si tu veux des études longues ou courtes ?"
+        },
+        {
+          "role": "user",
+          "content": "J'aime bien la tech et les systèmes informatiques."
+        },
+        {
+          "role": "assistant",
+          "content": "Je te recommande : **Licence Informatique** à *Université de Lille*. Bases théoriques de l'informatique, algorithmique, programmation."
+        }
+      ],
+      [
+        {
+          "role": "user",
+          "content": "Je veux travailler dans les jeux vidéo"
+        },
+        {
+          "role": "assistant",
+          "content": "Tu peux viser des écoles spécialisées en game design, animation 3D, ou programmation. Tu veux une formation en développement ou en design graphique ?"
+        },
+        {
+          "role": "user",
+          "content": "J'aime bien la tech et les systèmes informatiques."
+        },
+        {
+          "role": "assistant",
+          "content": "Je te recommande : **BUT Informatique** à *IUT Nice Côte d’Azur*. Formation pratique en développement, réseaux, bases de données."
+        }
+      ],
+      [
+        {
+          "role": "user",
+          "content": "Quel métier avec un bac techno STI2D ?"
+        },
+        {
+          "role": "assistant",
+          "content": "D'accord. Pour mieux t'aider, peux-tu me dire ton type de bac, ce que tu aimes faire, ou si tu veux des études longues ou courtes ?"
+        },
+        {
+          "role": "user",
+          "content": "J'aime bien la tech et les systèmes informatiques."
+        },
+        {
+          "role": "assistant",
+          "content": "Je te recommande : **Licence Informatique** à *Université de Lille*. Bases théoriques de l'informatique, algorithmique, programmation."
+        }
+      ],
+      [
+        {
+          "role": "user",
+          "content": "Est-ce que je peux devenir développeur sans passer par une école d'ingénieur ?"
+        },
+        {
+          "role": "assistant",
+          "content": "Les écoles d’ingénieurs sont accessibles après prépa ou post-bac. Tu veux que je t’en propose quelques-unes dans ton domaine ?"
+        },
+        {
+          "role": "user",
+          "content": "J'aime bien la tech et les systèmes informatiques."
+        },
+        {
+          "role": "assistant",
+          "content": "Je te recommande : **BUT Informatique** à *IUT Nice Côte d’Azur*. Formation pratique en développement, réseaux, bases de données."
+        }
+      ],
+      [
+        {
+          "role": "user",
+          "content": "Je veux un métier avec de l’action, pas derrière un bureau"
+        },
+        {
+          "role": "assistant",
+          "content": "D'accord. Pour mieux t'aider, peux-tu me dire ton type de bac, ce que tu aimes faire, ou si tu veux des études longues ou courtes ?"
+        },
+        {
+          "role": "user",
+          "content": "J'aime bien la tech et les systèmes informatiques."
+        },
+        {
+          "role": "assistant",
+          "content": "Je te recommande : **BUT Informatique** à *IUT Nice Côte d’Azur*. Formation pratique en développement, réseaux, bases de données."
+        }
+      ],
+      [
+        {
+          "role": "user",
+          "content": "Est-ce que la data science c’est fait pour moi ?"
+        },
+        {
+          "role": "assistant",
+          "content": "La data science combine les maths, l’informatique et l’analyse de données. Tu veux découvrir des parcours pour y accéder ?"
+        },
+        {
+          "role": "user",
+          "content": "J'aime bien la tech et les systèmes informatiques."
+        },
+        {
+          "role": "assistant",
+          "content": "Je te recommande : **Licence Informatique** à *Université de Lille*. Bases théoriques de l'informatique, algorithmique, programmation."
+        }
+      ],
+      [
+        {
+          "role": "user",
+          "content": "Je ne veux pas aller à la fac"
+        },
+        {
+          "role": "assistant",
+          "content": "Pas de souci. Il existe des BTS, BUT ou écoles spécialisées accessibles sans passer par la fac."
+        },
+        {
+          "role": "user",
+          "content": "J'aime bien la tech et les systèmes informatiques."
+        },
+        {
+          "role": "assistant",
+          "content": "Je te recommande : **École d’ingénieur** à *EPITA Paris*. Spécialisée en cybersécurité, IA, systèmes embarqués."
+        }
+      ],
+      [
+        {
+          "role": "user",
+          "content": "J'aime la biologie mais je ne veux pas faire médecine"
+        },
+        {
+          "role": "assistant",
+          "content": "D'accord. Pour mieux t'aider, peux-tu me dire ton type de bac, ce que tu aimes faire, ou si tu veux des études longues ou courtes ?"
+        },
+        {
+          "role": "user",
+          "content": "J'aime bien la tech et les systèmes informatiques."
+        },
+        {
+          "role": "assistant",
+          "content": "Je te recommande : **École d’ingénieur** à *EPITA Paris*. Spécialisée en cybersécurité, IA, systèmes embarqués."
+        }
+      ],
+      [
+        {
+          "role": "user",
+          "content": "Quelle formation pour travailler dans le développement durable ?"
+        },
+        {
+          "role": "assistant",
+          "content": "D'accord. Pour mieux t'aider, peux-tu me dire ton type de bac, ce que tu aimes faire, ou si tu veux des études longues ou courtes ?"
+        },
+        {
+          "role": "user",
+          "content": "J'aime bien la tech et les systèmes informatiques."
+        },
+        {
+          "role": "assistant",
+          "content": "Je te recommande : **BUT Informatique** à *IUT Nice Côte d’Azur*. Formation pratique en développement, réseaux, bases de données."
+        }
+      ],
+      [
+        {
+          "role": "user",
+          "content": "Je veux étudier à l'étranger"
+        },
+        {
+          "role": "assistant",
+          "content": "D'accord. Pour mieux t'aider, peux-tu me dire ton type de bac, ce que tu aimes faire, ou si tu veux des études longues ou courtes ?"
+        },
+        {
+          "role": "user",
+          "content": "J'aime bien la tech et les systèmes informatiques."
+        },
+        {
+          "role": "assistant",
+          "content": "Je te recommande : **Licence Informatique** à *Université de Lille*. Bases théoriques de l'informatique, algorithmique, programmation."
+        }
+      ],
+      [
+        {
+          "role": "user",
+          "content": "Je voudrais intégrer une école après le bac"
+        },
+        {
+          "role": "assistant",
+          "content": "D'accord. Pour mieux t'aider, peux-tu me dire ton type de bac, ce que tu aimes faire, ou si tu veux des études longues ou courtes ?"
+        },
+        {
+          "role": "user",
+          "content": "J'aime bien la tech et les systèmes informatiques."
+        },
+        {
+          "role": "assistant",
+          "content": "Je te recommande : **École d’ingénieur** à *EPITA Paris*. Spécialisée en cybersécurité, IA, systèmes embarqués."
+        }
+      ],
+      [
+        {
+          "role": "user",
+          "content": "J’aime bien toucher à tout, je suis curieux"
+        },
+        {
+          "role": "assistant",
+          "content": "D'accord. Pour mieux t'aider, peux-tu me dire ton type de bac, ce que tu aimes faire, ou si tu veux des études longues ou courtes ?"
+        },
+        {
+          "role": "user",
+          "content": "J'aime bien la tech et les systèmes informatiques."
+        },
+        {
+          "role": "assistant",
+          "content": "Je te recommande : **École d’ingénieur** à *EPITA Paris*. Spécialisée en cybersécurité, IA, systèmes embarqués."
+        }
+      ]
+    ]
+  }
