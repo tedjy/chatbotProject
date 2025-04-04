@@ -1,8 +1,39 @@
 from components.gen_llm_response import generate_llm_response
-
-
+from components.loadModel import generate_with_llama
 import streamlit as st
-def interface(model,tokenizer, embedding_model, collection, api_collection):
+def interface(model_fn, embedding_model, collection, api_collection):
+ # Ajout du fond d'écran doux gris clair
+    st.markdown(
+        """
+        <style>
+            body, .stApp {
+                background-color: #26272C;
+            }
+            .css-18e3th9 {
+                background-color: #26272C;
+            }
+            button {
+            background-color: #727383 !important;
+            color: #ffffff !important;
+            border-radius: 8px !important;
+            border: none !important;
+            padding: 0.5rem 1rem !important;
+            transition: background-color 0.3s;
+            }
+            button:hover {
+                background-color: #d4d4d4 !important;
+                color: #26272C !important;
+            }
+            input, textarea, .stTextInput > div > div > input {
+                background-color: #393A41 !important;
+                border: 1px solid #cccccc !important;
+                border-radius: 6px !important;
+                padding: 0.5rem;
+            }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
     st.title("🤖 Chatbot Mistral-7B GGUF avec mémoire RAG")
     st.write("Posez une question ou lancez un quizz d’orientation.")
 
@@ -47,19 +78,20 @@ def interface(model,tokenizer, embedding_model, collection, api_collection):
             st.session_state.quizz_step += 1
             st.rerun()
 
-    # ✅ Fin du quizz : suggestions
     elif st.session_state.show_quizz and st.session_state.quizz_step >= len(questions):
         st.success("✅ Quizz terminé ! Voici tes réponses :")
         st.json(st.session_state.quizz_answers)
 
-        if st.button("🔍 Voir suggestions de métiers"):
-            # une fonction qui génère des suggestions
+        # ✅ Suggestions uniquement si bouton cliqué
+        if st.button("🔍 Voir suggestions de métiers", key="suggestions_btn"):
             prompt = f"Voici le profil d'un étudiant : {st.session_state.quizz_answers}. Quels métiers pourraient lui convenir ?"
-            response = generate_llm_response(prompt)
-            st.write("🎯 Suggestions :")
-            st.write(response)
+            response = generate_llm_response(user_input, model_fn, embedding_model, collection, api_collection)
+            st.session_state.chat_history.append(("Vous", prompt))
+            st.session_state.chat_history.append(("Chatbot", response))
+            st.rerun()
 
-        if st.button("↩️ Revenir au chatbot"):
+        # ✅ Revenir au chatbot
+        if st.button("↩️ Revenir au chatbot", key="back_btn"):
             st.session_state.show_quizz = False
             st.session_state.quizz_step = 0
             st.session_state.quizz_answers = {}
@@ -76,7 +108,7 @@ def interface(model,tokenizer, embedding_model, collection, api_collection):
             submitted = st.form_submit_button("Envoyer")
 
         if submitted and user_input:
-            response = generate_llm_response(user_input, model,tokenizer, embedding_model, collection, api_collection)
+            response = generate_llm_response(user_input, model_fn, embedding_model, collection, api_collection)
             st.session_state.chat_history.append(("Vous", user_input))
             st.session_state.chat_history.append(("Chatbot", response))
             st.rerun()

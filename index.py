@@ -2,7 +2,7 @@ import asyncio
 import sys
 import streamlit as st
 # from onisepData import JSONtoChroma
-from components.loadModel import load_model
+from components.loadModel import generate_with_llama
 from components.initialize import initialize
 from components.interface import interface
 
@@ -15,14 +15,13 @@ if sys.platform == "win32":
 
 st.write("💾 Utilisation de la mémoire RAG")
 
-# Chargement du model 
-model, tokenizer = load_model()
+
 # Initialisation
 embedding_model, collection, api_collection = initialize()
 
 
 # interface streamlit
-interface(model, tokenizer, embedding_model, collection, api_collection)
+interface(generate_with_llama, embedding_model, collection, api_collection)
 
 
 

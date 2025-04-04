@@ -1,6 +1,6 @@
 from components.initialize import initialize
 import json
-from rapidfuzz import process
+from rapidfuzz import process, fuzz
 # Initialisation
 embedding_model, collection, api_collection = initialize()
 
@@ -30,38 +30,56 @@ def retrieve_memory(user_input, embedding_model, collection, max_memories=3):
             print("❌ Erreur de parsing mémoire :", e)
             formatted_memory.append(str(doc))
 
-    return formatted_memory  # Liste de str  # ✅ Liste de chaînes prêtes à afficher
-    # if results["documents"] and len(results["documents"][0]) > 0:
-    #     return results["documents"][0][0]  # Retourne le souvenir trouvé
-    # else:
-    #     print(" Aucun souvenir trouvé.")
-    #     return None
+    return formatted_memory  # Liste de str  # 
 
-def retrieve_api_data(user_input, embedding_model, api_collection):
-    """Recherche dans la mémoire des formations API en s'assurant de la pertinence"""
+def retrieve_api_data(user_input, embedding_model, api_collection): 
+    """Recherche dans la mémoire des formations API avec extraction correcte des métadonnées"""
     vector = embedding_model.encode(user_input).tolist()
-    results = api_collection.query(query_embeddings=[vector], n_results=3, include=["documents", "metadatas"], where={"source": "API"})
+    results = api_collection.query(query_embeddings=[vector], n_results=10, include=["documents", "metadatas"], where={"source": "API"})
     
     api_results = []
-    if results["documents"]:
-        for doc, meta in zip(results["documents"][0], results["metadatas"][0]):
-            api_results.append({
-                "Formation": meta.get("Formation", doc),
-                "Établissement": meta.get("Établissement", "Inconnu"),
-                "Ville": meta.get("Ville", "Inconnue"), 
-                "Domaine": meta.get("Domaine", "Inconnue")
- # lien vers la fiche ONISEP
-            })
 
-    return api_results  # Maintenant une liste de dictionnaires
+    if results["documents"]:
+        for doc in results["documents"][0]:
+            lignes = doc.split("\n")
+            item = {}
+            for ligne in lignes:
+                if ":" in ligne:
+                    cle, val = ligne.split(":", 1)
+                    item[cle.strip()] = val.strip()
+            api_results.append({
+                "Formation": item.get("Formation", "Inconnu"),
+                "Établissement": item.get("Établissement", "Inconnu"),
+                "Ville": item.get("Ville", "Inconnue"),
+                "Code postal": item.get("Code postal", ""),
+                "Domaine": item.get("Domaine", "Inconnu"),
+                "Niveau de sortie": item.get("Niveau de sortie", "Inconnu"),
+                "Durée": item.get("Durée", ""),
+                "Plus d'infos": item.get("Plus d'infos", "")
+            })
     
-def trouver_diplome(user_input, reference_diplomes):
-    input_clean = user_input.lower()
-    result = process.extractOne(input_clean, reference_diplomes.keys())
+    return api_results
     
-    if result is not None:
-        match, score, _ = result
-        if score > 80:
-            return match, reference_diplomes[match]
-    
+def trouver_diplome(prompt, diplomes_reference):
+    """
+    Essaie de détecter un diplôme mentionné dans le prompt de l'utilisateur,
+    en comparant avec les noms de formations de l'API (diplomes_reference).
+    """
+    prompt_clean = prompt.lower()
+
+    if not diplomes_reference:
+        return None, None
+
+    # On cherche la formation la plus proche du prompt (fuzzy matching)
+    meilleur_match = process.extractOne(
+        prompt_clean,
+        diplomes_reference.keys(),
+        scorer=fuzz.token_sort_ratio  # ✅ et pas process.fuzz
+    )
+
+    if meilleur_match and meilleur_match[1] > 75:  # seuil de confiance
+        nom_formation = meilleur_match[0]
+        infos = diplomes_reference[nom_formation]
+        return nom_formation, infos
+
     return None, None
